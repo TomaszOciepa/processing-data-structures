@@ -7,5 +7,10 @@ public class PojoExercise {
     // TODO: Utwórz instancję klasy i wypisz informacje o osobie na ekran.
     public static void main(String[] args) {
 
+        Person person = new Person("Tomek", "Ociepa", "Gdansk", 29);
+
+
+        System.out.println(person.toString());
+
     }
 }
