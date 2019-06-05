@@ -1,5 +1,10 @@
 package main.java.pl.infoshare.structures._2_lists._2_exercise;
 
+import main.java.pl.infoshare.structures._1_pojo.Person;
+
+import java.util.LinkedList;
+import java.util.List;
+
 public class ListExercise1 {
 
     // TODO: Ćwiczenie 1 - API list
@@ -10,6 +15,24 @@ public class ListExercise1 {
     // TODO: 5. Sprawdź rozmiar
     // TODO: 6. Wypisz wszystkie pełnoletnie osoby
     public static void main(String[] args) {
+
+        List<Person> personList = new LinkedList<>();
+
+        Person firstPerson = new Person("Tomek", "Ociepa", "Gdańsk", 29);
+        Person secoundPerson = new Person("Klaudia", "Quirini", "Gdańsk", 24);
+        Person thirdPerson = new Person("Zinedine", "Zidane", "Madryt", 46);
+        Person fourPerson = new Person("Przem", "Sadkowski", "Gdynia", 33);
+
+        personList.add(firstPerson);
+        personList.add(secoundPerson);
+        personList.add(thirdPerson);
+        personList.add(fourPerson);
+
+        System.out.println(personList.get(1));
+        personList.remove(2);
+        System.out.println("rozmiar listy:"+personList.size());
+
+        
 
     }
 }
