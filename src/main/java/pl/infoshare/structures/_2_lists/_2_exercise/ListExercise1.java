@@ -32,7 +32,14 @@ public class ListExercise1 {
         personList.remove(2);
         System.out.println("rozmiar listy:"+personList.size());
 
-        
+        System.out.println("Pełnoletnie osoby:");
+        for (int i = 0; i < personList.size(); i++) {
+
+            if (personList.get(i).getAge() >= 18){
+                System.out.println(personList.get(i));
+            }
+        }
+
 
     }
 }
